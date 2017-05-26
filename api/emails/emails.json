@@ -1,0 +1,321 @@
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "failed": 0
+    },
+    "hits": {
+        "total": 120,
+        "max_score": 1.0373167,
+        "hits": [
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqVUlZHplEK0mBfdQR",
+                "_score": 1.0373167,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c19964a"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "michael.mann@enron.com",
+                        "leticia.smith@enron.com",
+                        "leticia.smith@enron.com"
+                    ],
+                    "cc": [
+                        "leticia.smith@enron.com"
+                    ],
+                    "text": "Michael, I think Monday will be fine.\n\n\n\n\tEnron Energy Services\n\t\n\tFrom:  Michael Mann @ EES                           08/09/2000 09:43 PM\n\tPhone No: 609.252.0907\n\t\n\n\n\nTo: Kenneth Lay/Corp/Enron@ENRON\ncc: Leticia Smith/HOU/EES@EES \nSubject: Re: Owens-Illinois Meeting  \n\nThank you, Rosalee.  I will be forwarding to you Monday, a briefing package \nthat will provide Mr. Lay with background on the proposed transaction, the \nclient and client representatives.   Please let Lety Smith, who is my \nadministrative support (ext 36562) know if Mr. Lay will need it sooner.   \nLety will page me in the field to make alternative arrangements.\n\nMichael Mann\n\n\n\nKenneth Lay@ENRON on 08/09/2000 02:24:39 PM\nSent by: Rosalee Fleming@ENRON\nTo: Michael Mann/HOU/EES@EES\ncc:  \nSubject: Re: Owens-Illinois Meeting  \n\nMichael, in case you need Ken's bio, I am attaching it for your use.\n\nRosalee\n\n\n\n\n\tEnron Energy Services\n\t\n\tFrom:  Michael Mann @ EES                           08/08/2000 09:12 PM\n\tPhone No: 609.252.0907\n\t\n\n\n\nTo: Thomas E White/HOU/EES@EES, Kenneth Lay/Corp/Enron\ncc: Harold G Buchanan/HOU/EES, Lou Pai, Jeremy Blachman, Mark Peterson, Julie \nDavidson/HOU/EES, Judy G Smith/HOU/EES@EES \nSubject: Owens-Illinois Meeting\n\nWe have confirmed a meeting to introduce you to Tom Young, EVP (and member, \nO-I Board of Directors) and members of his management team at O-I \nHeadquarters next Tuesday, 8/15 at 11:30 am.  We have 90 minutes, Mr. Young \nwill be hosting us to lunch during our meeting.  Joe Lemieux, CEO, is \nunavailable only because his calendar just didn't match up with your near \nterm available dates.  My strong bias is that the sooner we have an \nopportunity to connect at the top the better, especially given our drive to \nclose in Q-3.\n\nIn addition to coordinating logistics, I will get briefing packets to your \noffices Monday describing the proposed transaction, deal related issues \n(details are not likely to come up during the meeting), key O-I personnel \nbios, and general information about O-I and its current business, including \nsummary outside financial analysis.\n\nRegards,\nMichael\n\n\n\n\n\n\n\n\n",
+                    "mid": "11837032.1075840285704.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/105.",
+                    "bcc": [
+                        "leticia.smith@enron.com"
+                    ],
+                    "to": [
+                        "michael.mann@enron.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "105.",
+                    "date": "2000-08-10 01:58:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Owens-Illinois Meeting"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqaHIkHplEK0mBfdRA",
+                "_score": 0.90425706,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c199647"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "jaime.alatorre@enron.com",
+                        "myzagui@ect.enron.com",
+                        "steven.kean@enron.com",
+                        "myzagui@ect.enron.com",
+                        "steven.kean@enron.com"
+                    ],
+                    "cc": [
+                        "myzagui@ect.enron.com",
+                        "steven.kean@enron.com"
+                    ],
+                    "text": "Hi Jaime -\n\nThanks for the information about the dinner.  Ken said that he would be \nflying from Aspen to New York (or Washington, if that's the city).  He said \nhe would very much like to meet with you for 30 - 45 minutes before the \ndinner for a briefing.  \n\nThanks.\n\nRosie \n\n\n\n\nJaime Alatorre\n08/08/2000 10:33 AM\nSent by: Jaime Alatorre\nTo: Kenneth Lay/Corp/Enron@ENRON\ncc: myzagui@ect.enron.com, Steven J Kean/HOU/EES@EES \nSubject: Dinner with V. Fox\n\nDear Ken,\n Federico Sada, who is travelling with President elect Vicente Fox in South \nAmerica, called me this morning, \nand asked me to give you the confirmed list of attendees to the dinner in New \nYork, Wednesday August 23, 8:00 P.M.\nat the Watteau Room of the St. Regis Hotel:\n\n Sanford I. Weill   Citigroup, Inc.   Chairman and CEO\n Hendrick Verfaille  Monsanto Co.   President and CEO\n William B Harrison, Jr.  Chase Manhattan Corp.  Chairman and CEO\n Raymond V. Gilmartin  Merck and Company, Inc. Chairman and CEO\n Michael Armstrong  AT&T    Chairman and CEO\n Stephen M. Wolf  US Airways   Chairman and CEO\n Kenneth L. Lay   Enron Corp.   Chairman and CEO\n\nPending confirmation\n Douglas A. Warner III  J.P. Morgan   Chairman\n\nAccording to Federico, if there is any late cancellation, no one will be \nsubstituted. Also, there is a small possibility that\nthe dinner could take place in Washington, rather than N.Y., based on Fox's \nmeeting with President Clinton; they are still\nworking on the final agenda. \n \n Max and myself are working on the background information that you will need, \nand will keep you posted of any \nchanges; best regards,  jaime____\n",
+                    "mid": "11395510.1075840285634.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/102.",
+                    "bcc": [
+                        "myzagui@ect.enron.com",
+                        "steven.kean@enron.com"
+                    ],
+                    "to": [
+                        "jaime.alatorre@enron.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "102.",
+                    "date": "2000-08-08 05:54:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Dinner with V. Fox"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqGcxAHplEK0mBfdOV",
+                "_score": 0.85738736,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c199646"
+                    },
+                    "sender": "tori.wells@enron.com",
+                    "recipients": [
+                        "michael@optsevents.com"
+                    ],
+                    "cc": [],
+                    "text": "Mr. Christman:\n\nThank you for your invitation for Dr. Lay to speak at your upcoming forum in \nFrance, the format looks wonderful.  Unfortunately, Dr. Lay has calendar \nconflicts and will be unable to participate.\n\nIf you should need further assistance, please do not hesitate to contact us.\n\nTori Wells\nExecutive Assistant",
+                    "mid": "22263156.1075840285610.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/101.",
+                    "bcc": [],
+                    "to": [
+                        "michael@optsevents.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "101.",
+                    "date": "2000-08-04 09:04:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Wall Street Journal Millennium Forum"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqIlzRHplEK0mBfdOu",
+                "_score": 0.85738736,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c199646"
+                    },
+                    "sender": "tori.wells@enron.com",
+                    "recipients": [
+                        "michael@optsevents.com"
+                    ],
+                    "cc": [],
+                    "text": "Mr. Christman:\n\nThank you for your invitation for Dr. Lay to speak at your upcoming forum in \nFrance, the format looks wonderful.  Unfortunately, Dr. Lay has calendar \nconflicts and will be unable to participate.\n\nIf you should need further assistance, please do not hesitate to contact us.\n\nTori Wells\nExecutive Assistant",
+                    "mid": "22263156.1075840285610.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/101.",
+                    "bcc": [],
+                    "to": [
+                        "michael@optsevents.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "101.",
+                    "date": "2000-08-04 09:04:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Wall Street Journal Millennium Forum"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqIlzRHplEK0mBfdOw",
+                "_score": 0.84747154,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c199648"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "loyal_lay@yahoo.com"
+                    ],
+                    "cc": [],
+                    "text": "Ken Lay wrote:\n\n\"Loyal -\n\nI was really disappointed you and Lavonne were not able to make the Rees \nreunion.  I was looking forward to catching up with both of you.\n\nOur broadband business is doing great.  Just a few days ago, we announced a \nvideo-on-demand service we will be providing with Blockbuster.  It has \ncreated a lot of interest.\n\nIn general, my family is doing very well.  Linda and I now have six grandkids \n(four new ones since the first of the year) plus Elizabeth's wedding.  Let's \nstay in touch.\n\nKen\"\n\n\n\n\n\nLoyal Lay <loyal_lay@yahoo.com> on 08/05/2000 06:25:04 PM\nTo: klay@enron.com\ncc:  \nSubject: Your E-mail address\n\n\nHi Kenny: Bonny sent me your E-mail address and\nso I am trying it out. Sorry we could not make it\nto the party. The temperature is very warm here\nin Kansas today. I checked Enron stock recently\nand it looks like it is doing fine. I am\nparticularly interested in your venture into the\nfiber optics communications business and the\nwindpower. We sold our interest in the Cellular\nbusiness last year and I think the land line\ncompany will be sold soon. We sold to Allied\nTelephone Coimpany of Little Rock. Two other\nengineers and myself put Kansas Cellular together\nabout 14 years ago. Then we built a fiber system\nfrom East to West across Kansas. That was sold\nwith the Cellular. Take care of yourself-Loyal\n\n__________________________________________________\nDo You Yahoo!?\nKick off your party with Yahoo! Invites.\nhttp://invites.yahoo.com/\n\n",
+                    "mid": "29206103.1075840285657.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/103.",
+                    "bcc": [],
+                    "to": [
+                        "loyal_lay@yahoo.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "103.",
+                    "date": "2000-08-08 06:33:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Your E-mail address"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqPBmWHplEK0mBfdP7",
+                "_score": 0.84747154,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c19964d"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "ted.enloe@compaq.com"
+                    ],
+                    "cc": [],
+                    "text": "Mr. Enloe -\n\nKen Lay asked me to let you know that regrettably he will be in Europe, so \nunable to attend the dinner.\n\nRosalee\n\n\n\n\n\"Enloe, Ted\" <Ted.Enloe@COMPAQ.com> on 08/10/2000 02:08:44 PM\nTo: \"Capellas, Michael\" <Michael.Capellas@COMPAQ.com>, \"Chris A. Davis \n(E-mail)\" <Cdavis@onisystems.com>, \"George H. Heilmeier (E-mail)\" \n<ghh@telcordia.com>, \"Judith L. Craven (E-mail)\" <lynnj@iname.com>, \"Kenneth \nL. Lay (E-mail)\" <klay@enron.com>, \"Kenneth Roman (E-mail)\" \n<kenroman@worldnet.att.net>, \"Lawrence T. Babbio Jr. (E-mail)\" \n<babbio@BellAtlantic.com>, \"Lucille S. Salhany (E-mail)\" <lucie@jhmedia.com>, \n\"Peter N. Larson (E-mail)\" <hkiss@bruncorp.com>, \"Thomas J. Perkins (E-mail)\" \n<kjewett@kpcb.com>\ncc:  \nSubject: Friday, September 29, 2000\n\n\nI would like to request that you reserve the evening of Friday, September\n29, 2000 for a dinner in New York honoring Ben Rosen as he retires from the\nboard of Compaq Computer Corporation.\n\nFurther details (time, location, etc.) will follow.\n\nPlease reply to this email ASAP and let me know your availability.\n\nThanks, Ted\n\n",
+                    "mid": "18601230.1075840285841.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/109.",
+                    "bcc": [],
+                    "to": [
+                        "ted.enloe@compaq.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "109.",
+                    "date": "2000-08-11 02:13:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Friday, September 29, 2000"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqVUlZHplEK0mBfdQP",
+                "_score": 0.84747154,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c199648"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "loyal_lay@yahoo.com"
+                    ],
+                    "cc": [],
+                    "text": "Ken Lay wrote:\n\n\"Loyal -\n\nI was really disappointed you and Lavonne were not able to make the Rees \nreunion.  I was looking forward to catching up with both of you.\n\nOur broadband business is doing great.  Just a few days ago, we announced a \nvideo-on-demand service we will be providing with Blockbuster.  It has \ncreated a lot of interest.\n\nIn general, my family is doing very well.  Linda and I now have six grandkids \n(four new ones since the first of the year) plus Elizabeth's wedding.  Let's \nstay in touch.\n\nKen\"\n\n\n\n\n\nLoyal Lay <loyal_lay@yahoo.com> on 08/05/2000 06:25:04 PM\nTo: klay@enron.com\ncc:  \nSubject: Your E-mail address\n\n\nHi Kenny: Bonny sent me your E-mail address and\nso I am trying it out. Sorry we could not make it\nto the party. The temperature is very warm here\nin Kansas today. I checked Enron stock recently\nand it looks like it is doing fine. I am\nparticularly interested in your venture into the\nfiber optics communications business and the\nwindpower. We sold our interest in the Cellular\nbusiness last year and I think the land line\ncompany will be sold soon. We sold to Allied\nTelephone Coimpany of Little Rock. Two other\nengineers and myself put Kansas Cellular together\nabout 14 years ago. Then we built a fiber system\nfrom East to West across Kansas. That was sold\nwith the Cellular. Take care of yourself-Loyal\n\n__________________________________________________\nDo You Yahoo!?\nKick off your party with Yahoo! Invites.\nhttp://invites.yahoo.com/\n\n",
+                    "mid": "29206103.1075840285657.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/103.",
+                    "bcc": [],
+                    "to": [
+                        "loyal_lay@yahoo.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "103.",
+                    "date": "2000-08-08 06:33:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Your E-mail address"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqaHIkHplEK0mBfdRG",
+                "_score": 0.84747154,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c19964d"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "ted.enloe@compaq.com"
+                    ],
+                    "cc": [],
+                    "text": "Mr. Enloe -\n\nKen Lay asked me to let you know that regrettably he will be in Europe, so \nunable to attend the dinner.\n\nRosalee\n\n\n\n\n\"Enloe, Ted\" <Ted.Enloe@COMPAQ.com> on 08/10/2000 02:08:44 PM\nTo: \"Capellas, Michael\" <Michael.Capellas@COMPAQ.com>, \"Chris A. Davis \n(E-mail)\" <Cdavis@onisystems.com>, \"George H. Heilmeier (E-mail)\" \n<ghh@telcordia.com>, \"Judith L. Craven (E-mail)\" <lynnj@iname.com>, \"Kenneth \nL. Lay (E-mail)\" <klay@enron.com>, \"Kenneth Roman (E-mail)\" \n<kenroman@worldnet.att.net>, \"Lawrence T. Babbio Jr. (E-mail)\" \n<babbio@BellAtlantic.com>, \"Lucille S. Salhany (E-mail)\" <lucie@jhmedia.com>, \n\"Peter N. Larson (E-mail)\" <hkiss@bruncorp.com>, \"Thomas J. Perkins (E-mail)\" \n<kjewett@kpcb.com>\ncc:  \nSubject: Friday, September 29, 2000\n\n\nI would like to request that you reserve the evening of Friday, September\n29, 2000 for a dinner in New York honoring Ben Rosen as he retires from the\nboard of Compaq Computer Corporation.\n\nFurther details (time, location, etc.) will follow.\n\nPlease reply to this email ASAP and let me know your availability.\n\nThanks, Ted\n\n",
+                    "mid": "18601230.1075840285841.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/109.",
+                    "bcc": [],
+                    "to": [
+                        "ted.enloe@compaq.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "109.",
+                    "date": "2000-08-11 02:13:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Friday, September 29, 2000"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqMPydHplEK0mBfdPG",
+                "_score": 0.7928065,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c199645"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "rob.bradley@enron.com"
+                    ],
+                    "cc": [],
+                    "text": "Oh, Rob, I'm happy to do so!!  I hope you are on vacation!!\n\nRosie\n\n\n\n\nRob Bradley\n08/04/2000 01:27 PM\nTo: Kenneth Lay/Corp/Enron@ENRON\ncc:  \nSubject: Re: Gathering Place Speaking Invitation  \n\nGreat--and I will be inspired with my draft of his remarks.\n\nRosie, could you call the phone number on the invitation, ask for Herb \nBateman (he is the director), and tell him of the commitment?\n\nI am out of town and do not have their number, and they called me wondering \nabout Ken's decision last Friday.\n\nThanks,\n\n- Rob\n\n\n\n\nKenneth Lay on 08/04/2000 12:40:45 PM\nSent by: Rosalee Fleming\nTo: Rob Bradley/Corp/Enron@ENRON\ncc: Tori L Wells/HOU/ECT@ECT \n\nSubject: Re: Gathering Place Speaking Invitation  \n\nHi Rob -\n\nKen said \"If you'll prepare the remarks, I'll be happy to do this\".\n\nRosie\n\n\nRob Bradley\n07/19/2000 09:51 AM\n\n\nTo: Kenneth Lay/Corp/Enron@ENRON\ncc:  \nSubject: Gathering Place Speaking Invitation\n\nIf you are inclined to accept this invitation, we could put together an \ninteresting talk on the importance of good mental health to business with \nsome national statistics and then segue into Enron's emphasis on wellness and \nhaving fun in the workplace.  Our strategy and experience will be very \ninteresting to the group since it shows what a corporate leader is doing to \nbecome the employer of choice in the marketplace.\n\nYou could expect a full house (around 400) for the talk.  If it fits into \nyour schedule, Jack Bowen said he would be delighted to be honorary chairman \nof the event.\n\n- Rob\n\n\n\n\n\n\n",
+                    "mid": "20840329.1075840285588.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/100.",
+                    "bcc": [],
+                    "to": [
+                        "rob.bradley@enron.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=us-ascii",
+                    "fname": "100.",
+                    "date": "2000-08-04 08:52:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Gathering Place Speaking Invitation"
+                }
+            },
+            {
+                "_index": "index",
+                "_type": "enron",
+                "_id": "AVwqPBmXHplEK0mBfdQD",
+                "_score": 0.7928065,
+                "_source": {
+                    "id": {
+                        "$oid": "52af48b5d55148fa0c199655"
+                    },
+                    "sender": "rosalee.fleming@enron.com",
+                    "recipients": [
+                        "dyergin@cera.com"
+                    ],
+                    "cc": [],
+                    "text": "Hi Mr. Yergin -\n\nI just wanted to make sure that you knew that Ken does plan to do this.  He \ndid talk to Governor Knowles.\n\nThanks.\n\nRosalee\n\n\n\n\nDan Yergin <dyergin@CERA.com> on 08/15/2000 11:22:38 AM\nTo: Kenneth.Lay@enron.com\ncc:  \nSubject: Governors Conference\n\n\n\n\nDear Ken, \n\nIt was good to talk with you last week, and I hope you got some vacation in \nAspen.? I'm working at it! \n\nRosalie said you'd be getting in this afternoon, and I? wanted to reach you \nby phone or e-mail before Governor Tony Knowles from Alaska calls you.? \nGovernor Knowles (classmate of George W.), along with Governor Taft of Ohio, \nhas enlisted us in a conference that seven governors are sponsoring on \nnatural gas in order to elucidate the market and issues -- and needs -- \nbefore it explodes as a political issue -- and perhaps helps head it off (in \ncontrast to what happened with gasoline).? Governor Knowles is the current \nchairman of the Interstate Oil Compact Commission, and it will be under the \nauspices of the IOCC.? They promise at least seven governors and a lot of \nother distinguished people.? It seems to us that this is a very timely event.\n\nThey would like to invite you to be the luncheon speaker.? (I will be kicking \noff the conference).?? It looks to be a very good and high visibility \nplatform.? And they would be very keen and excited -- and honored -- to have \nyou in that featured role in it works for your schedule.\n\nIt takes place in Columbus, Ohio, on September 20. \n\nTony is a very good guy, and of course natural gas as well as oil looms very \nlarge for him.? You'll enjoy talking with him.? He can certainly fill you in \nfurther on what they would like to accomplish.\n\nIf it works out for you to do this in terms of your schedule and interest, \nthat would be great. \n\nOn behalf of the governors, thank you for the consideration. \n\nBest, \n\nDan \n\n\n",
+                    "mid": "29970419.1075840286080.JavaMail.evans@thyme",
+                    "fpath": "enron_mail_20110402/maildir/lay-k/_sent/116.",
+                    "bcc": [],
+                    "to": [
+                        "dyergin@cera.com"
+                    ],
+                    "replyto": null,
+                    "ctype": "text/plain; charset=ANSI_X3.4-1968",
+                    "fname": "116.",
+                    "date": "2000-08-23 07:21:00-07:00",
+                    "folder": "_sent",
+                    "subject": "Re: Governors Conference"
+                }
+            }
+        ]
+    }
+}

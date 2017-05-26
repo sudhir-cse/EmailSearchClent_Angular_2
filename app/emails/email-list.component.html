@@ -1,0 +1,47 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div class="row searchRow">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Global search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+            </div><!-- /input-group -->
+        </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-filter"></i></button>
+                </span>
+                <input [(ngModel)]='filterBy' type="text" class="form-control" placeholder="Filter by subject...">
+            </div><!-- /input-group -->
+        </div>
+    </div>
+  </div>
+  <!-- Table -->
+  <div class='table-responsive'>
+    <table class='table' *ngIf='emails && emails.length'>
+        <thead>
+            <tr>
+                <th>Sender</th>
+                <th>Subject</th>
+                <th>Text</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let email of emails | EmailFilter: filterBy'>
+                <td>{{email._source.sender}}</td>
+                <td>{{email._source.subject}}</td>
+                <td><a [routerLink]="['/emails', email._id]">{{email._source.text | TextSummary:0:70}}</a></td>
+                <td>{{email._source.date | date:medium}}</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>

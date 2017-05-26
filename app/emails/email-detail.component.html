@@ -1,0 +1,58 @@
+<div class='panel panel-primary' *ngIf='email'>
+    <div class='panel-heading' style='font-size:large'>
+        {{email._source.subject}}
+    </div>
+
+    <div class='panel-body'>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sender</td>
+                        <td>{{email._source.sender}}</td>
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td>{{email._source.subject}}</td>
+                    </tr>
+                    <tr>
+                        <td>Recipients</td>
+                        <td>{{email._source.recipients.join(', ')}}</td>
+                    </tr>
+                    <tr>
+                        <td>CC</td>
+                        <td>{{email._source.cc.join(', ')}}</td>
+                    </tr>
+                    <tr>
+                        <td>BCC</td>
+                        <td>{{email._source.bcc.join(', ')}}</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>{{email._source.date | date:medium}}</td>
+                    </tr>
+                    <tr>
+                        <td>To</td>
+                        <td>{{email._source.to.join(', ')}}</td>
+                    </tr>
+                    <tr>
+                        <td>Text</td>
+                        <td>{{email._source.text}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class='panel-footer'>
+       <a class="btn btn-default" (click)='onBack()' style="width:80px">
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+       </a>
+    </div>
+</div>
