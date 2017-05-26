@@ -3,10 +3,10 @@ import * as _ from 'underscore';
 
 @Injectable()
 export class PagerService {
-    getPager(totalItems: number, currentPage: number = 1, pageSize: number = 10) {
+
+    getPager(totalItems: number, currentPage: number = 1, pageSize: number = 8){
         // calculate total pages
         let totalPages = Math.ceil(totalItems / pageSize);
-
         let startPage: number, endPage: number;
         if (totalPages <= 10) {
             // less than 10 total pages so show all
@@ -34,7 +34,7 @@ export class PagerService {
         let pages = _.range(startPage, endPage + 1);
 
         // return object with all pager properties required by the view
-        return {
+         return {
             totalItems: totalItems,
             currentPage: currentPage,
             pageSize: pageSize,
@@ -45,5 +45,6 @@ export class PagerService {
             endIndex: endIndex,
             pages: pages
         };
+     
     }
 }

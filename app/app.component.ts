@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { EmailService } from './emails/email.service';
+import { PagerService} from './emails/pager.service';
 
 @Component({
     selector: 'pm-app',
@@ -20,7 +21,7 @@ import { EmailService } from './emails/email.service';
         </div>
      </div>    
     `,
-    providers: [EmailService]
+    providers: [EmailService, PagerService]
 })
 export class AppComponent { 
     pageHeading: string = 'Enron Email Search'

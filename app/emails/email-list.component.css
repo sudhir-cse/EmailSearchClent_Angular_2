@@ -1,3 +1,11 @@
 thead{
     color: #337AB7;
 }
+
+.pagination{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.cpager{
+    text-align: center;
+}

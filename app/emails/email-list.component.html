@@ -25,7 +25,7 @@
   </div>
   <!-- Table -->
   <div class='table-responsive'>
-    <table class='table' *ngIf='emails && emails.length'>
+    <table class='table' *ngIf='pagedItems && pagedItems.length'>
         <thead>
             <tr>
                 <th>Sender</th>
@@ -35,7 +35,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor='let email of emails | EmailFilter: filterBy'>
+            <tr *ngFor='let email of pagedItems | EmailFilter: filterBy'>
                 <td>{{email._source.sender}}</td>
                 <td>{{email._source.subject}}</td>
                 <td><a [routerLink]="['/emails', email._id]">{{email._source.text | TextSummary:0:70}}</a></td>
@@ -43,5 +43,24 @@
             </tr>
         </tbody>
     </table>
+  </div>
+  <div class="panel-footer cpager">
+      <ul *ngIf="pager" class="pagination">
+        <li [ngClass]="{disabled:pager.currentPage === 1}">
+            <a (click)="setPage(1)">First</a>
+        </li>
+        <li [ngClass]="{disabled:pager.currentPage === 1}">
+            <a (click)="setPage(pager.currentPage - 1)"><i class="glyphicon glyphicon-triangle-left"></i></a>
+        </li>
+        <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+            <a (click)="setPage(page)">{{page}}</a>
+        </li>
+        <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+            <a (click)="setPage(pager.currentPage + 1)"><i class="glyphicon glyphicon-triangle-right"></i></a>
+        </li>
+        <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+            <a (click)="setPage(pager.totalPages)">Last</a>
+        </li>
+     </ul>
   </div>
 </div>

@@ -1,7 +1,7 @@
 {
-  "name": "product-management",
+  "name": "enron-email-search",
   "version": "1.0.0",
-  "author": "Deborah Kurata",
+  "author": "Sudhir Kumar Sah",
   "description": "NorCom Development Task",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
@@ -34,6 +34,7 @@
     "zone.js": "^0.6.23"
   },
   "devDependencies": {
+    "@types/underscore": "^1.8.0",
     "concurrently": "^2.2.0",
     "lite-server": "^2.2.0",
     "tslint": "^3.7.4",
