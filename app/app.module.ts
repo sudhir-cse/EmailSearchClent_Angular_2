@@ -10,6 +10,7 @@ import { TextSummaryPipe } from './emails/text-summary.pipe';
 import { WelcomeComponent } from './home/welcome.component'; 
 import { EmailDetailComponent } from './emails/email-detail.component';
 
+
 @NgModule({
   imports: [ 
     BrowserModule,
