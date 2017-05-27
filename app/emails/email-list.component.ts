@@ -15,10 +15,11 @@ import { IPager } from './pager';
 export class EmailListComponent implements OnInit{ 
     pageTitle: string = 'Email List';
     filterBy: string;
+    searchText: string;
     emails: IEmail[]; //all items
     errorMessage: string;
 
-    /*------pagination------*/
+    //pagination
     pager: IPager; //pager object
     pagedItems: IEmail[]; //paged item
 
@@ -26,15 +27,26 @@ export class EmailListComponent implements OnInit{
                 private _pagerService: PagerService){
     }
 
+    //Usefull while nevigating back to this page
     ngOnInit(){
-        this._emailService.getEmails()
+        //re-store that state
+        this.emails = this._emailService.emails();
+        this.pager = this._pagerService.pager;
+        this.pagedItems = <IEmail[]> this._pagerService.pagedItems;
+        if(this.emails) this.setPage(this.pager.currentPage);
+    }
+
+    getEmails(){
+        this.pagedItems = null;
+        this._emailService.getEmails(this.searchText)
             .subscribe(emails => {
                 this.emails = emails;
                 this.setPage(1);
             },
             error => this.errorMessage = <any>error);
     }
-
+    
+    //pagination
     setPage(page: number) {
         // get pager object from service
         this.pager = <IPager>this._pagerService.getPager(this.emails.length, page);       
@@ -43,6 +55,13 @@ export class EmailListComponent implements OnInit{
         }
         // get current page of items
         this.pagedItems = this.emails.slice(this.pager.startIndex, this.pager.endIndex + 1);
+
+        //store the state
+        this._pagerService.pager = this.pager;
+        this._pagerService.pagedItems = this.pagedItems;
     }
 
+    ep(){
+        alert(this.searchText);
+    }
 }

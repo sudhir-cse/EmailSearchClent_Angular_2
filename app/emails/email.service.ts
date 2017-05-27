@@ -12,16 +12,18 @@ import { IEmail, ISource } from './email';
 @Injectable()
 export class EmailService{
 
-    private _emailsUrl: string = 'api/emails/emails.json';
+    //private _localUrl: string = 'api/emails/emails.json';
+    private _baseUrl: string = "http://localhost:9200/index/_search?q=text:";
     private _emails: IEmail[];
 
     constructor(private _http: Http){
     }
 
-    getEmails(): Observable<IEmail[]>{
-        return this._http.get(this._emailsUrl)
-            .map((response: Response) => <IEmail[]> response.json().hits.hits)
-            .do(data => console.log('All: '+ JSON.stringify(data)))
+    getEmails(searchText: string): Observable<IEmail[]>{
+        return this._http.get(this._baseUrl + searchText)
+            .map((response: Response) =><IEmail[]> response.json().hits.hits)
+            .do(data => this._emails = data)
+           // .do(data => console.log('All: '+ JSON.stringify(data)))
             .catch(this.handleError);
     }
 
@@ -30,9 +32,11 @@ export class EmailService{
         return Observable.throw(error.json().error || 'Server Error');
     }
 
-    getEmailById(id: string): Observable<IEmail>{
-        return this.getEmails()
-            .map((emails: IEmail[]) => emails.find(e => e._id == id));
+    getEmailById(id: string): IEmail{
+        return this._emails.find(e => e._id == id);
     }
 
+    emails(): IEmail[] {
+        return this._emails;
+    }
 }

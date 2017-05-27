@@ -3,9 +3,9 @@
     <div class="row searchRow">
         <div class="col-md-6 col-md-offset-3">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Global search...">
+                <input (keyup.enter)='getEmails()' [(ngModel)]='searchText' type="text" class="form-control" placeholder="Global search...">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                    <button (click)='getEmails()' class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
                 </span>
             </div><!-- /input-group -->
         </div>
@@ -25,7 +25,7 @@
   </div>
   <!-- Table -->
   <div class='table-responsive'>
-    <table class='table' *ngIf='pagedItems && pagedItems.length'>
+    <table class='table'>
         <thead>
             <tr>
                 <th>Sender</th>
@@ -34,7 +34,7 @@
                 <th>Date</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody *ngIf='pagedItems && pagedItems.length'>
             <tr *ngFor='let email of pagedItems | EmailFilter: filterBy'>
                 <td>{{email._source.sender}}</td>
                 <td>{{email._source.subject}}</td>
@@ -44,7 +44,7 @@
         </tbody>
     </table>
   </div>
-  <div class="panel-footer cpager">
+  <div class="panel-footer cpager" *ngIf='pagedItems && pagedItems.length'>
       <ul *ngIf="pager" class="pagination">
         <li [ngClass]="{disabled:pager.currentPage === 1}">
             <a (click)="setPage(1)">First</a>

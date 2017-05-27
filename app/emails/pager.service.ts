@@ -1,8 +1,14 @@
 import { Injectable } from '@angular/core';
 import * as _ from 'underscore';
 
+import { IPager } from './pager';
+
 @Injectable()
 export class PagerService {
+
+    //re-store the state
+    pager: IPager;
+    pagedItems: Object[];
 
     getPager(totalItems: number, currentPage: number = 1, pageSize: number = 8){
         // calculate total pages
