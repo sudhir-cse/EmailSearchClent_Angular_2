@@ -12,18 +12,18 @@ import { IEmail, ISource } from './email';
 @Injectable()
 export class EmailService{
 
-    //private _localUrl: string = 'api/emails/emails.json';
     private _baseUrl: string = "http://localhost:9200/index/_search?q=text:";
     private _emails: IEmail[];
 
     constructor(private _http: Http){
     }
 
+    //pulls data from back-end server
     getEmails(searchText: string): Observable<IEmail[]>{
         return this._http.get(this._baseUrl + searchText)
             .map((response: Response) =><IEmail[]> response.json().hits.hits)
             .do(data => this._emails = data)
-           // .do(data => console.log('All: '+ JSON.stringify(data)))
+            .do(data => console.log('All: '+ JSON.stringify(data)))
             .catch(this.handleError);
     }
 

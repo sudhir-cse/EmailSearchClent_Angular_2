@@ -6,6 +6,7 @@ import { IEmail } from './email';
 })
 export class EmailFilterPipe implements PipeTransform{
 
+    // filter by email-subject
     transform(value: IEmail[], filterBy: string): IEmail[]{
         filterBy ? filterBy.toLowerCase() : null;
         return filterBy ? value.filter((email: IEmail) =>

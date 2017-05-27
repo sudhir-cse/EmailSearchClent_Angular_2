@@ -38,13 +38,6 @@ export class EmailDetailComponent implements OnInit, OnDestroy{
         this._router.navigate(['/emails']);
     }
 
-    // getEmail(id: string){
-    //     this._emailService.getEmailById(id).subscribe(
-    //         email => this.email = email,
-    //         error => this.errorMessage = <any>error
-    //     );
-    // }
-
     getEmail(id: string){
         this.email = this._emailService.getEmailById(id);
     }
