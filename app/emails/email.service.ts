@@ -9,18 +9,20 @@ import 'rxjs/add/observable/throw';
 
 import { IEmail, ISource } from './email';
 
+import { AppConfigService } from '../config/app-config.service';
+
 @Injectable()
 export class EmailService{
 
-    private _baseUrl: string = "http://localhost:9200/index/_search?q=text:";
     private _emails: IEmail[];
 
-    constructor(private _http: Http){
+    constructor(private _http: Http,
+                private _appConfigService: AppConfigService){
     }
 
     //pulls data from back-end server
     getEmails(searchText: string): Observable<IEmail[]>{
-        return this._http.get(this._baseUrl + searchText)
+        return this._http.get(this._appConfigService.baseUrl + 'emails?search=' + searchText)
             .map((response: Response) =><IEmail[]> response.json().hits.hits)
             .do(data => this._emails = data)
             .do(data => console.log('All: '+ JSON.stringify(data)))
@@ -28,6 +30,7 @@ export class EmailService{
     }
 
     handleError(error: Response){
+        alert("Server Error");
         console.error(error);
         return Observable.throw(error.json().error || 'Server Error');
     }

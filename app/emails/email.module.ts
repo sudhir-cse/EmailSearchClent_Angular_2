@@ -9,6 +9,7 @@ import { EmailFilterPipe } from './email-filter.pipe';
 import { EmailService } from './email.service'
 import { TextSummaryPipe } from './text-summary.pipe';
 import { PagerService} from './pager.service';
+import { AppConfigService } from '../config/app-config.service';
 
 @NgModule({
     imports: [
@@ -25,7 +26,7 @@ import { PagerService} from './pager.service';
         EmailFilterPipe,
         TextSummaryPipe
     ],
-    providers: [EmailService, PagerService]
+    providers: [EmailService, PagerService, AppConfigService]
 })
 export class EmailModule{
 

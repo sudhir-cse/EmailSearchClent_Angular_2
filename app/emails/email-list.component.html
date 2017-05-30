@@ -21,6 +21,11 @@
                 <input [(ngModel)]='filterBy' type="text" class="form-control" placeholder="Filter by subject...">
             </div><!-- /input-group -->
         </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2 hitText">
+                Total hits: {{ emails ? emails.length : 0 }}
+            </div>
+        </div>
     </div>
   </div>
   <!-- Table -->
